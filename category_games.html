@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <title>Games</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
 <body>
+
+<div class="cart">🛒 <span id="cartCount">0</span></div>
 
 <nav>
 <a href="index.html">Home</a>
@@ -16,50 +19,24 @@
 <a href="category_games.html">Games</a>
 </nav>
 
-<div class="container">
-
 <h1>🎮 Games</h1>
 
+<div class="container">
 <div class="grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1606813907291-76a7a3f7b9b1">
-<h3>PlayStation 5</h3>
-<p class="price">R$ 3.999</p>
+<img src="https://cdn.pixabay.com/photo/2020/04/08/16/32/playstation-5015029_1280.jpg">
+<h3>PS5</h3>
+<button onclick="addToCart('PS5')">Adicionar</button>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1605901309584-818e25960a8f">
-<h3>PlayStation 4</h3>
-<p class="price">R$ 2.199</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1605901309330-0f2c0a5f2c2f">
-<h3>Xbox Series X</h3>
-<p class="price">R$ 3.799</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1606813907300-123456789abc">
-<h3>Xbox Series S</h3>
-<p class="price">R$ 2.299</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1612287230202-1b0c0c0c0c0c">
-<h3>Nintendo Switch</h3>
-<p class="price">R$ 2.499</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1605901309584-111111111111">
-<h3>Steam Deck</h3>
-<p class="price">R$ 3.299</p>
+<img src="https://cdn.pixabay.com/photo/2017/08/30/12/45/xbox-2693008_1280.jpg">
+<h3>Xbox</h3>
+<button onclick="addToCart('Xbox')">Adicionar</button>
 </div>
 
 </div>
-
 </div>
 
 </body>

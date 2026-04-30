@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <title>Tech Store</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
 <body>
+
+<div class="cart">🛒 <span id="cartCount">0</span></div>
 
 <nav>
 <a href="index.html">Home</a>
@@ -16,35 +19,24 @@
 <a href="category_games.html">Games</a>
 </nav>
 
-<div class="container">
-
 <h1>🔥 TECH STORE</h1>
 
+<div class="container">
 <div class="grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1">
-<h3>Samsung TV</h3>
-<p class="price">R$ 2.499</p>
-<a class="btn" href="category_tvs.html">Ver TVs</a>
+<img src="https://cdn.pixabay.com/photo/2016/11/29/12/30/iphone-1867461_1280.jpg">
+<h3>Smartphone</h3>
+<button onclick="addToCart('Smartphone')">Adicionar</button>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
-<h3>iPhone</h3>
-<p class="price">R$ 5.299</p>
-<a class="btn" href="category_smartphones.html">Ver Smartphones</a>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853">
+<img src="https://cdn.pixabay.com/photo/2015/01/21/14/14/apple-606761_1280.jpg">
 <h3>Notebook</h3>
-<p class="price">R$ 3.299</p>
-<a class="btn" href="category_notebooks.html">Ver Notebooks</a>
+<button onclick="addToCart('Notebook')">Adicionar</button>
 </div>
 
 </div>
-
 </div>
 
 </body>

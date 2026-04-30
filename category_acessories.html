@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <title>Acessórios</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
 <body>
+
+<div class="cart">🛒 <span id="cartCount">0</span></div>
 
 <nav>
 <a href="index.html">Home</a>
@@ -16,50 +19,30 @@
 <a href="category_games.html">Games</a>
 </nav>
 
-<div class="container">
-
 <h1>🎧 Acessórios</h1>
 
+<div class="container">
 <div class="grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1585386959984-a41552231693">
-<h3>Headset Gamer</h3>
-<p class="price">R$ 299</p>
+<img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/headphones-1868612_1280.jpg">
+<h3>Headset</h3>
+<button onclick="addToCart('Headset')">Adicionar</button>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1518444028785-8f3b3b7a6b72">
-<h3>Fone JBL</h3>
-<p class="price">R$ 199</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1587825140708-2f3b3c5a1c2c">
-<h3>Teclado RGB</h3>
-<p class="price">R$ 249</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7">
+<img src="https://cdn.pixabay.com/photo/2015/05/31/10/55/mouse-791163_1280.jpg">
 <h3>Mouse Gamer</h3>
-<p class="price">R$ 149</p>
+<button onclick="addToCart('Mouse')">Adicionar</button>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1585386959984-6c4c5b7a8a3c">
-<h3>Caixa de Som</h3>
-<p class="price">R$ 399</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1587825140708-1a2b3c4d5e6f">
-<h3>Mousepad RGB</h3>
-<p class="price">R$ 99</p>
+<img src="https://cdn.pixabay.com/photo/2016/03/27/07/08/keyboard-1280535_1280.jpg">
+<h3>Teclado</h3>
+<button onclick="addToCart('Teclado')">Adicionar</button>
 </div>
 
 </div>
-
 </div>
 
 </body>
