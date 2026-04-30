@@ -1,6 +1,6 @@
 body{
     margin:0;
-    font-family: Arial, sans-serif;
+    font-family:Arial;
     background:#0f1115;
     color:white;
 }
@@ -10,13 +10,13 @@ nav{
     padding:15px;
     display:flex;
     justify-content:center;
-    gap:10px;
     flex-wrap:wrap;
+    gap:10px;
 }
 
 nav a{
-    color:white;
     text-decoration:none;
+    color:white;
     background:#232f3e;
     padding:10px 14px;
     border-radius:6px;
@@ -30,7 +30,11 @@ nav a:hover{
 
 h1{
     text-align:center;
-    margin:20px;
+}
+
+h2{
+    margin-top:30px;
+    color:#00c3ff;
 }
 
 .container{
@@ -50,11 +54,6 @@ h1{
     padding:15px;
     border-radius:10px;
     text-align:center;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:scale(1.03);
 }
 
 .card img{
@@ -92,4 +91,14 @@ button:hover{
     padding:10px;
     border-radius:8px;
     font-weight:bold;
+}
+
+.cartBox{
+    position:fixed;
+    top:60px;
+    right:10px;
+    width:260px;
+    background:#1a1f2b;
+    padding:10px;
+    border-radius:10px;
 }

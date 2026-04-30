@@ -1,49 +1,17 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<title>Acessórios</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-</head>
-<body>
-
-<div class="cart">🛒 <span id="cartCount">0</span></div>
-
-<nav>
-<a href="index.html">Home</a>
-<a href="category_tvs.html">TVs</a>
-<a href="category_smartphones.html">Smartphones</a>
-<a href="category_notebooks.html">Notebooks</a>
-<a href="category_acessories.html">Acessórios</a>
-<a href="category_games.html">Games</a>
-</nav>
-
 <h1>🎧 Acessórios</h1>
 
 <div class="container">
+
+<h2>Áudio</h2>
 <div class="grid">
-
-<div class="card">
-<img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/headphones-1868612_1280.jpg">
-<h3>Headset</h3>
-<button onclick="addToCart('Headset')">Adicionar</button>
+<div class="card"><img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/headphones-1868612_1280.jpg"><h3>Headset</h3><p class="price">R$ 299</p><button onclick="addToCart('Headset',299)">Adicionar</button></div>
+<div class="card"><img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/headphones-1868612_1280.jpg"><h3>Fone Bluetooth</h3><p class="price">R$ 199</p><button onclick="addToCart('Fone',199)">Adicionar</button></div>
 </div>
 
-<div class="card">
-<img src="https://cdn.pixabay.com/photo/2015/05/31/10/55/mouse-791163_1280.jpg">
-<h3>Mouse Gamer</h3>
-<button onclick="addToCart('Mouse')">Adicionar</button>
-</div>
-
-<div class="card">
-<img src="https://cdn.pixabay.com/photo/2016/03/27/07/08/keyboard-1280535_1280.jpg">
-<h3>Teclado</h3>
-<button onclick="addToCart('Teclado')">Adicionar</button>
+<h2>Periféricos</h2>
+<div class="grid">
+<div class="card"><img src="https://cdn.pixabay.com/photo/2015/05/31/10/55/mouse-791163_1280.jpg"><h3>Mouse</h3><p class="price">R$ 149</p><button onclick="addToCart('Mouse',149)">Adicionar</button></div>
+<div class="card"><img src="https://cdn.pixabay.com/photo/2016/03/27/07/08/keyboard-1280535_1280.jpg"><h3>Teclado</h3><p class="price">R$ 199</p><button onclick="addToCart('Teclado',199)">Adicionar</button></div>
 </div>
 
 </div>
-</div>
-
-</body>
-</html>
