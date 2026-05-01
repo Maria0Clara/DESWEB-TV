@@ -7,9 +7,9 @@ function addToCart(name, price){
     updateCart();
 }
 
-function removeItem(index){
-    total -= cart[index].price;
-    cart.splice(index,1);
+function removeItem(i){
+    total -= cart[i].price;
+    cart.splice(i,1);
     updateCart();
 }
 
@@ -31,23 +31,12 @@ function updateCart(){
     cart.forEach((item,i)=>{
         box.innerHTML += `
         <div style="display:flex;justify-content:space-between;margin:5px 0;">
-            <span>${item.name} - R$ ${item.price}</span>
-            <button onclick="removeItem(${i})">X</button>
+        <span>${item.name} - R$ ${item.price}</span>
+        <button onclick="removeItem(${i})">X</button>
         </div>`;
     });
 
-    box.innerHTML += `
-    <hr>
-    <b>Total: R$ ${total}</b><br><br>
-    <button onclick="finalizar()">Finalizar Compra</button>
-    `;
-}
-
-function finalizar(){
-    alert("Compra finalizada! Total: R$ " + total);
-    cart = [];
-    total = 0;
-    updateCart();
+    box.innerHTML += `<hr><b>Total: R$ ${total}</b>`;
 }
 
 window.onload = updateCart;
