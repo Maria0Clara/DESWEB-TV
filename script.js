@@ -14,7 +14,6 @@ function removeItem(i){
 }
 
 function updateCart(){
-
     const count = document.getElementById("cartCount");
     if(count) count.innerText = cart.length;
 
@@ -32,7 +31,7 @@ function updateCart(){
     });
 
     box.innerHTML += `<hr><b>Total: R$ ${total}</b>
-    <button onclick="finalizar()">Finalizar Compra</button>`;
+    <button onclick="finalizar()">Finalizar</button>`;
 }
 
 function finalizar(){
