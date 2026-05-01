@@ -1,29 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Smartphones</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
 </head>
+
 <body>
 
-<div class="cart">🛒 <span id="cartCount">0</span></div>
-<div class="cartBox" id="cartBox"></div>
+<header><div class="logo">Smartphones</div></header>
 
 <nav>
 <a href="index.html">Home</a>
-<a href="category_tvs.html">TVs</a>
-<a href="category_smartphones.html">Smartphones</a>
-<a href="category_notebooks.html">Notebooks</a>
-<a href="category_acessories.html">Acessórios</a>
-<a href="category_games.html">Games</a>
 </nav>
 
-<div class="container">
-<h1>📱 Smartphones</h1>
-
-<div class="grid">
+<div class="container grid">
 
 <div class="card">
 <img src="https://cdn.pixabay.com/photo/2016/11/29/12/30/iphone-1867461_1280.jpg">
@@ -50,7 +42,7 @@
 <img src="https://cdn.pixabay.com/photo/2015/05/31/10/55/smartphone-791160_1280.jpg">
 <h3>Motorola Edge</h3>
 <p class="price">R$ 2.199</p>
-<button onclick="addToCart('Motorola',2199)">Comprar</button>
+<button onclick="addToCart('Motorola Edge',2199)">Comprar</button>
 </div>
 
 <div class="card">
@@ -68,7 +60,8 @@
 </div>
 
 </div>
-</div>
+
+<div class="cartBox" id="cartBox"></div>
 
 </body>
 </html>
