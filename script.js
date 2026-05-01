@@ -14,9 +14,20 @@ function updateCart(){
 
     box.innerHTML = "<h3>🛒 Carrinho</h3>";
 
+    if(cart.length === 0){
+        box.innerHTML += "<p>Vazio</p>";
+        return;
+    }
+
     cart.forEach((item)=>{
-        box.innerHTML += `<p>${item.name} - R$ ${item.price}</p>`;
+        box.innerHTML += `
+        <div style="display:flex;justify-content:space-between;margin:5px 0;">
+        <span>${item.name}</span>
+        <b>R$ ${item.price}</b>
+        </div>`;
     });
 
     box.innerHTML += `<hr><b>Total: R$ ${total}</b>`;
 }
+
+window.onload = updateCart;
