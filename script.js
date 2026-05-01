@@ -14,13 +14,14 @@ function removeItem(i){
 }
 
 function updateCart(){
+
     const count = document.getElementById("cartCount");
     if(count) count.innerText = cart.length;
 
     const box = document.getElementById("cartBox");
     if(!box) return;
 
-    box.innerHTML = "";
+    box.innerHTML = "<h3>🛒 Carrinho</h3>";
 
     cart.forEach((item,i)=>{
         box.innerHTML += `
@@ -31,7 +32,7 @@ function updateCart(){
     });
 
     box.innerHTML += `<hr><b>Total: R$ ${total}</b>
-    <button onclick="finalizar()">Finalizar</button>`;
+    <button onclick="finalizar()">Finalizar Compra</button>`;
 }
 
 function finalizar(){
